@@ -1,3 +1,5 @@
+## Backend
+
 ### Initial Setup of Django
 
 1. Make sure python and pip are installed on the system.
@@ -38,3 +40,14 @@ Both can be installed together with
 ```sh
 python -m pip install djangorestframework django-cors-headers
 ```
+
+<hr>
+
+## Frontend = React + TypeScript + Vite
+
+```
+bun create vite@latest frontend
+```
+
+React working in Vite with HMR and some ESLint rules.
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) using [SWC](https://swc.rs/) for Fast Refresh
