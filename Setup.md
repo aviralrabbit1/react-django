@@ -1,6 +1,4 @@
-## Backend
-
-### Initial Setup of Django
+### env Setup of Django
 
 1. Make sure python and pip are installed on the system.
     ```sh
@@ -39,6 +37,15 @@
 Both can be installed together with
 ```sh
 python -m pip install djangorestframework django-cors-headers
+```
+
+<hr>
+
+## Backend
+
+From root directory,
+```sh
+django-admin startproject backend
 ```
 
 <hr>
