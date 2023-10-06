@@ -78,6 +78,12 @@ INSTALLED_APPS = [
 ]
 ```
 
+After setting up the models, urls, api/*, etc. from `/backend`, run
+```sh
+python manage.py makemigrations 
+python manage.py migrate
+```
+
 <hr>
 
 ## Frontend = React + TypeScript + Vite
