@@ -48,6 +48,23 @@ From root directory,
 django-admin startproject backend
 ```
 
+Then migrate to propagate changes to the models (adding a field, deleting a model, etc.) into the database schema. 
+```sh
+python backend/manage.py migrate
+```
+`migrate` executes the SQL commands in the database file. So after executing migrate all the tables of the app are created in the database file.
+
+Create a superuser with 
+```sh
+python backend/manage.py createsuperuser
+```
+
+Start an app inside `{root}/backend`
+```sh
+cd backend
+python manage.py startapp firstapp
+```
+
 <hr>
 
 ## Frontend = React + TypeScript + Vite
