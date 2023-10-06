@@ -65,6 +65,19 @@ cd backend
 python manage.py startapp firstapp
 ```
 
+In `backend/backend/settings.py`, add dependencies and `firstapp` (app name)
+```py
+INSTALLED_APPS = [
+   ...
+
+   'rest_framework',
+   'corsheaders',
+
+   'firstapp'
+   ...
+]
+```
+
 <hr>
 
 ## Frontend = React + TypeScript + Vite
